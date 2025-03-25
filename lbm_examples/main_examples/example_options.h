@@ -58,31 +58,34 @@ extern "C" {
  */
 #define USER_LORAWAN_DEVICE_EUI                        \
     {                                                  \
-        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01 \
+        0x00, 0x80, 0xE1, 0x15, 0x00, 0x2F, 0xC0, 0xFD \
     }
 #define USER_LORAWAN_JOIN_EUI                          \
     {                                                  \
-        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01 \
+        0x70, 0xB3, 0xD5, 0x7E, 0xD0, 0x00, 0xA6, 0x4E \
     }
 #define USER_LORAWAN_GEN_APP_KEY                                                                       \
     {                                                                                                  \
-        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01 \
+        0x2B, 0x7E, 0x15, 0x16, 0x28, 0xAE, 0xD2, 0xA6, 0xAB, 0xF7, 0x88, 0x09, 0xCF, 0x4F, 0x3C, 0x92 \
     }
 #define USER_LORAWAN_APP_KEY                                                                           \
     {                                                                                                  \
-        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01 \
+        0x2B, 0x7E, 0x15, 0x16, 0x28, 0xAE, 0xD2, 0xA6, 0xAB, 0xF7, 0x88, 0x09, 0xCF, 0x4F, 0x3C, 0x92 \
     }
 
 /**
  * @brief Modem Region define
  */
-#ifndef MODEM_EXAMPLE_REGION
-#if !defined( SX128X )
-#define MODEM_EXAMPLE_REGION SMTC_MODEM_REGION_EU_868
-#else
-#define MODEM_EXAMPLE_REGION SMTC_MODEM_REGION_WW2G4
-#endif
-#endif  // MODEM_EXAMPLE_REGION
+#define MODEM_EXAMPLE_REGION SMTC_MODEM_REGION_EU_868  // Adapte selon ta région
+
+
+// #ifndef MODEM_EXAMPLE_REGION
+// #if !defined( SX128X )
+// #define MODEM_EXAMPLE_REGION SMTC_MODEM_REGION_EU_868
+// #else
+// #define MODEM_EXAMPLE_REGION SMTC_MODEM_REGION_WW2G4
+// #endif
+// #endif  // MODEM_EXAMPLE_REGION
 
 #ifdef __cplusplus
 }
