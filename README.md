@@ -24,10 +24,10 @@ Projet Github [SWL2001](https://github.com/Lora-net/SWL2001)
 | <img src="./assets/images/dragino-lps8v2.png" alt="Logo" height="300"/> | <img src="./assets/images/LR1121DVK1TBKS.png" alt="Logo" height="300"/> |
 
 
-### Serivces
+### Services
 
 
-**Site web de gestion du réseau LoRa sous Chirpstack 4.0 (Plateform LoRaWan)***</h4>**
+**Site web de gestion du réseau LoRa sous Chirpstack 4.0 (Plateform LoRaWan)**
 
  [voir le site](https://chirpstack.vps.gus.giize.com) | identifiant : ***visiteur@localhost*** mot de passe : ***visiteur***
 
