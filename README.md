@@ -2,10 +2,10 @@
 
 ## Sommaire
 
-- [Base de Travail](##base-de-travail)
-  - [Sources](###sources)
-  - [Équipements](###équipements)
-  - [Services](###services)
+- [Base de Travail](#base-de-travail)
+  - [Sources](#sources)
+  - [Équipements](#équipements)
+  - [Services](#services)
 
 ## Base de travail
 
