@@ -1,0 +1,79 @@
+make app TARGET_RADIO=lr1121 -j
+make[1] : on entre dans le répertoire « /home/augustin/Downloads/SWL2001/lbm_examples »
+make app_build
+make[2] : on entre dans le répertoire « /home/augustin/Downloads/SWL2001/lbm_examples »
+make -C ../lbm_lib/. basic_modem RADIO=lr1121 MODEM_TRACE=yes MCU_FLAGS="-mcpu=cortex-m4 -mthumb -mabi=aapcs -mfpu=fpv4-sp-d16 -mfloat-abi=hard"  EXTRAFLAGS="" OPT="-Os" CRYPTO=SOFT NB_OF_STACK=1 LBM_CSMA=yes USE_CSMA_BY_DEFAULT=yes VERBOSE=no -j
+make[3] : on entre dans le répertoire « /home/augustin/Downloads/SWL2001/lbm_lib »
+make basic_modem_build
+make[4] : on entre dans le répertoire « /home/augustin/Downloads/SWL2001/lbm_lib »
+[1;32m+ basic_modem_build build/basic_modem_lr1121_trace.a [SUCCESS][0m
+make[4] : on quitte le répertoire « /home/augustin/Downloads/SWL2001/lbm_lib »
+make[3] : on quitte le répertoire « /home/augustin/Downloads/SWL2001/lbm_lib »
+[1;36m[CC] Building main.c[0m
+[1;36m[CC] Building main_examples/main_periodical_uplink.c[0m
+[1;36m[CC] Building mcu_drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rng.c[0m
+[1;36m[CC] Building mcu_drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_lptim.c[0m
+[1;36m[CC] Building mcu_drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rtc.c[0m
+[1;36m[CC] Building mcu_drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rtc_ex.c[0m
+[1;36m[CC] Building mcu_drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.c[0m
+[1;36m[CC] Building mcu_drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c[0m
+[1;36m[CC] Building mcu_drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_iwdg.c[0m
+[1;36m[CC] Building mcu_drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c[0m
+[1;36m[CC] Building mcu_drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c[0m
+[1;36m[CC] Building mcu_drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c[0m
+[1;36m[CC] Building mcu_drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c[0m
+[1;36m[CC] Building mcu_drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c[0m
+[1;36m[CC] Building mcu_drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c[0m
+[1;36m[CC] Building mcu_drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c[0m
+[1;36m[CC] Building mcu_drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c[0m
+[1;36m[CC] Building mcu_drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c[0m
+[1;36m[CC] Building mcu_drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c[0m
+[1;36m[CC] Building smtc_modem_hal/smtc_modem_hal.c[0m
+[1;36m[CC] Building mcu_drivers/core/STM32L4xx/system_stm32l4xx.c[0m
+[1;36m[CC] Building smtc_hal_l4/smtc_hal_flash.c[0m
+[1;36m[CC] Building smtc_hal_l4/smtc_hal_gpio.c[0m
+[1;36m[CC] Building smtc_hal_l4/smtc_hal_mcu.c[0m
+[1;36m[CC] Building smtc_hal_l4/smtc_hal_rtc.c[0m
+[1;36m[CC] Building smtc_hal_l4/smtc_hal_rng.c[0m
+[1;36m[CC] Building smtc_hal_l4/smtc_hal_spi.c[0m
+[1;36m[CC] Building smtc_hal_l4/smtc_hal_lp_timer.c[0m
+[1;36m[CC] Building smtc_hal_l4/smtc_hal_trace.c[0m
+[1;36m[CC] Building smtc_hal_l4/smtc_hal_uart.c[0m
+[1;36m[CC] Building smtc_hal_l4/smtc_hal_watchdog.c[0m
+[1;36m[CC] Building radio_hal/lr11xx_hal.c[0m
+[1;36m[CC] Building radio_hal/ral_lr11xx_bsp.c[0m
+[1;36m[CC] Building radio_hal/radio_utilities.c[0m
+[1;36m[AS] Building mcu_drivers/core/STM32L4xx/startup_stm32l476xx.s[0m
+mcu_drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c: In function 'HAL_RCC_OscConfig':
+mcu_drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c:946:1: warning: embedding a directive within macro arguments is not portable
+  946 | #if defined(RCC_PLLP_SUPPORT)
+      | ^
+mcu_drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c:948:1: warning: embedding a directive within macro arguments is not portable
+  948 | #endif
+      | ^
+[1;36m[CC] Building build_lr1121_l4/app_lr1121.elf[0m
+/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-closer.o): in function `_close_r':
+/build/newlib-38V0JC/newlib-4.4.0.20231231/build_nano/arm-none-eabi/thumb/v7e-m+fp/hard/newlib/../../../../../../newlib/libc/reent/closer.c:47:(.text+0xc): warning: _close is not implemented and will always fail
+/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-closer.o): note: the message above does not take linker garbage collection into account
+/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-lseekr.o): in function `_lseek_r':
+/build/newlib-38V0JC/newlib-4.4.0.20231231/build_nano/arm-none-eabi/thumb/v7e-m+fp/hard/newlib/../../../../../../newlib/libc/reent/lseekr.c:49:(.text+0x14): warning: _lseek is not implemented and will always fail
+/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/bin/ld/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-lseekr.o): note: the message above does not take linker garbage collection into account
+: /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-readr.o): in function `_read_r':
+/build/newlib-38V0JC/newlib-4.4.0.20231231/build_nano/arm-none-eabi/thumb/v7e-m+fp/hard/newlib/../../../../../../newlib/libc/reent/readr.c:49:(.text+0x14): warning: _read is not implemented and will always fail
+/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-readr.o): note: the message above does not take linker garbage collection into account
+/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-writer.o): in function `_write_r':
+/build/newlib-38V0JC/newlib-4.4.0.20231231/build_nano/arm-none-eabi/thumb/v7e-m+fp/hard/newlib/../../../../../../newlib/libc/reent/writer.c:49:(.text+0x14): warning: _write is not implemented and will always fail
+/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-writer.o): note: the message above does not take linker garbage collection into account
+Memory region         Used Size  Region Size  %age Used
+             RAM:        8556 B        96 KB      8.70%
+            RAM2:        2560 B      32512 B      7.87%
+      NOINITRAM2:         244 B        256 B     95.31%
+           FLASH:      115648 B         1 MB     11.03%
+arm-none-eabi-size build_lr1121_l4/app_lr1121.elf
+   text	   data	    bss	    dec	    hex	filename
+ 115048	    544	  10832	 126424	  1edd8	build_lr1121_l4/app_lr1121.elf
+[1;36m[HEX] Building build_lr1121_l4/app_lr1121.hex[0m
+[1;36m[BIN] Building build_lr1121_l4/app_lr1121.bin[0m
+[1;32m+ app_build [SUCCESS][0m
+make[2] : on quitte le répertoire « /home/augustin/Downloads/SWL2001/lbm_examples »
+make[1] : on quitte le répertoire « /home/augustin/Downloads/SWL2001/lbm_examples »
